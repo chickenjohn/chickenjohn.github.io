@@ -1,0 +1,16 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{- if not (or site.Params.hideAuthor .Params.hideAuthor) -}}
+    {{ partial "page/author.html" . }}
+  {{- end -}}
+  {{- if not (or site.Params.hideDate .Params.hideDate) -}}
+    {{ partial "main/dates.html" . }}
+  {{- end -}}
+  {{ partial "page/translation_list.html" . }}
+  {{ partial "page/toc.html" . }}
+  {{ .Content }}
+  {{ partial "page/terms.html" (dict "taxonomy" "tags" "page" .) }}
+  {{ partial "page/terms.html" (dict "taxonomy" "categories" "page" .) }}
+  {{ partial "page/page_nav.html" . }}
+  {{ partial "page/page-end.html" . }}
+{{ end }}

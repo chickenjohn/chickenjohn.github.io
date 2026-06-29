@@ -1,0 +1,92 @@
+# Documentation: https://gohugo.io/getting-started/configuration
+# Don't remove _merge, which imports default config
+theme: hugo-theme-yue
+baseURL: https://yue.cyrusyip.org/ # Change this to your real domain name, e.g. https://my-cool-domain.org/
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+enableGitInfo: false # Set lastmod from git history, this may increase build time
+enableEmoji: true # Emoji list: https://gohugo.io/quick-reference/emojis/
+enableRobotsTXT: true
+
+params:
+  _merge: deep # Import default config
+  rssFullContent: true
+  homePagerSize: 5
+  sectionPagerSize: 10000 # Default: 10, set this to a large number to remove pagination
+  hideAuthor: true
+  hideDate: true
+  images:
+    # Default image used in Open Graph, see https://gohugo.io/templates/embedded/#configure-open-graph
+    - favicon.ico # /static/favicon.ico
+
+frontmatter:
+  lastmod: ['lastmod', ':default'] # lastmod in front matter has highest precedence
+
+markup:
+  _merge: deep # Import default config
+  goldmark:
+    renderer:
+      unsafe: true # Allow HTML code in Markdown, see https://gohugo.io/getting-started/configuration-markup/#rendererunsafe
+
+# Any key not defined under a languages will fall back to the global value in the root of configuration
+languages:
+  en:
+    contentDir: content/en
+    locale: en-US
+    direction: ltr
+    label: English
+    title: "Tianchu's Page" # Shown in home page
+    weight: 10
+    menus:
+      main:
+        - name: About_Me
+          pageRef: /about.md
+          weight: 10
+        - name: CV
+          pageRef: /cv.md
+          weight: 20
+        - name: Publications
+          pageRef: /pubs.md
+          weight: 30
+        - name: Avery
+          pageRef: /avery
+          weight: 40
+    params:
+      dateFormat: Jan 02, 2006 # See https://gohugo.io/functions/time/format/
+      author: Tianchu Ji # Default author, supports single value or list, used in single page
+      footer:
+        copyright:
+          author: Tianchu Ji
+  # zh-CN:
+  #   hasCJKLanguage: true
+  #   contentDir: content/zh-CN
+  #   locale: zh-CN
+  #   direction: ltr
+  #   label: 中文
+  #   title: 月
+  #   weight: 20
+  #   menus:
+  #     main:
+  #       - name: 主页
+  #         pageRef: /
+  #         weight: 10
+  #       - name: 文章
+  #         pageRef: /posts
+  #         weight: 20
+  #       - name: 标签
+  #         pageRef: /tags
+  #         weight: 30
+  #       - name: 类别
+  #         pageRef: /categories
+  #         weight: 40
+  #       - name: 关于
+  #         pageRef: /about
+  #         weight: 50
+  #   params:
+  #     dateFormat: 2006年1月2日
+  #     author: 小月
+  #     footer:
+  #       copyright:
+  #         yearStart: 2023
+  #         # yearEnd: 2024
+  #         author: 小月

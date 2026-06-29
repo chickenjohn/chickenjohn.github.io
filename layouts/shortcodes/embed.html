@@ -1,0 +1,5 @@
+{{- with .Site.GetPage (.Get 0) -}}
+  {{- .Content -}}
+{{- else -}}
+  {{- warnf "Shortcode 'embed': Page '%s' not found" (.Get 0) -}}
+{{- end -}}
