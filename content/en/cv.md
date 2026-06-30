@@ -10,7 +10,7 @@ title: "Curriculum Vitae"
 ## Work experience
 
 * SDE, Annapurna Labs, Amazon, *2026-present*
-* SDE Intern@Amazon Web Services (AWS) Redshift AQUA Team, *Summer 2020*
+* SDE Intern, Amazon Web Services (AWS), *Summer 2020*
 
 ## Projects
 
