@@ -9,7 +9,7 @@ title: "Curriculum Vitae"
 
 ## Work experience
 
-* ML Kernel Performance Engineer, Annapurna Labs, Amazon, *2026-present*
+* SDE, Annapurna Labs, Amazon, *2026-present*
 * SDE Intern@Amazon Web Services (AWS) Redshift AQUA Team, *Summer 2020*
 
 ## Projects
