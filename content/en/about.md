@@ -4,7 +4,7 @@ title: About Me
 
 Hello, I’m Tianchu Ji (冀天初), a computer engineer focusing on computer architecture for AI workload. 
 
-Being a kernel developer at Annapurna Labs, Amazon, I currently focus on performance evaluation and optimization for AI accelerators.
+Being a kernel performance engineer at Annapurna Labs, Amazon, I currently focus on performance evaluation and optimization for domain-specific AI accelerators.
 
 I received my doctorate degreen in Computer Engineering from the Stony Brook University in 2026.
 During my Ph.D. studying, 
